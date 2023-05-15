@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  color: hsl(184, 14%, 56%);
+}
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  background-color: hsl(189, 41%, 97%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+.container .container__infos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 1rem;
+}
+.container .container__infos .input {
+  box-sizing: border-box;
+  border-color: hsl(172, 67%, 45%);
+  outline-color: hsl(172, 67%, 45%);
+  border-style: none;
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: end;
+  color: hsl(183, 100%, 15%);
+  background: url("../../images/icon-dollar.svg") no-repeat 5%;
+  background-color: hsl(190, 15%, 92%);
+}
+.container .container__infos #people {
+  box-sizing: border-box;
+  border-color: hsl(172, 67%, 45%);
+  outline-color: hsl(172, 67%, 45%);
+  border-style: none;
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: end;
+  color: hsl(183, 100%, 15%);
+  background: url("../../images/icon-person.svg") no-repeat 5%;
+  background-color: hsl(190, 15%, 92%);
+}
+.container .container__infos #value, .container .container__infos #people {
+  margin-top: 10px;
+  width: 100%;
+}
+.container .container__infos .tip__values {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.container .container__infos .tip__values #tip {
+  width: 100%;
+}
+.container .container__infos .tip__values .btn {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.container .container__infos .tip__values .btn:hover {
+  transition: 0.2s;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.container .container__infos .tip__values #tip {
+  box-sizing: border-box;
+  border-color: hsl(172, 67%, 45%);
+  outline-color: hsl(172, 67%, 45%);
+  border-style: solid;
+  padding: 0 1rem;
+  color: hsl(183, 100%, 15%);
+  text-align: end;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.container .container__results {
+  background-color: hsl(183, 100%, 15%);
+  flex: 1;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.container .container__results .results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.container .container__results .results .tip_amount {
+  display: flex;
+  justify-content: space-between;
+}
+.container .container__results .results .tip_amount .subtitle {
+  color: hsl(189, 41%, 97%);
+  margin-bottom: 10px;
+}
+.container .container__results .results .tip_amount .tip_value {
+  font-size: 2.2rem;
+  color: hsl(172, 67%, 45%);
+}
+.container .container__results .btn-reset {
+  padding: 0.5rem;
+  background-color: hsl(186, 14%, 43%);
+  border: none;
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .container__results .btn-reset:hover {
+  transition: 0.2s;
+  background-color: hsl(172, 67%, 45%);
+}
+
+* {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  color: hsl(184, 14%, 56%);
+}
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    width: 70vw;
+    flex-direction: column;
+  }
+  .container__results {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  main {
+    padding: 3rem 0 0 0;
+  }
+  .container {
+    width: 100vw;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

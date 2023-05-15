@@ -1,0 +1,22 @@
+@media screen and (max-width: 880px) {
+    .container{
+        width: 70vw;
+        flex-direction: column;
+    }
+
+    .container__results{
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    
+    main{
+        padding: 3rem 0 0 0;
+    }
+
+    .container{
+        width: 100vw;
+        flex-direction: column;
+    }
+}

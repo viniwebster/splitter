@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/components/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <a href="#" class="title">
+      <img class="logo" src="/images/logo.svg" alt="splitter logo">
+    </a>
+    <section>
+      <div class="container">
+
+        <div class="container__infos">
+          
+          <label for="value" class="subtitle">Bill <br>
+          <input class="input" type="number" name="value" id="value" placeholder="0">
+          </label>
+
+          <div class="tip__container">
+            <span class="subtitle">Select Tip %</span>
+              <div class="tip__values">
+                <input class="btn" type="button" value="5%">
+                <input class="btn" type="button" value="10%">
+                <input class="btn" type="button" value="15%">
+                <input class="btn" type="button" value="25%">
+                <input class="btn" type="button" value="50%">
+                <input class="custom" type="number" name="tip" id="tip" placeholder="Custom">
+              </div>
+          </div>
+
+          <label for="people" class="subtitle">Number of People <br>
+            <input class="input" type="number" name="people" id="people" placeholder="0">
+          </label>  
+        </div>
+
+        <div class="container__results">
+          <div class="results">
+            <div class="tip_amount">
+              <div class="tip__infos">
+                <span class="subtitle">Tip Amount</span> <br>
+                <span>/ person</span>
+              </div>
+              <span class="tip_value" id="tip_value"> $0.00 </span>
+            </div>
+
+            <div class="tip_amount">
+              <div class="tip__infos">
+                <span class="subtitle">Total</span> <br>
+                <span>/ person</span>
+              </div>
+              <span class="tip_value" id="total"> $0.00 </span>
+            </div>
+          </div>
+
+          <input class="btn-reset" type="button" value="RESET" id="reset">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/viniwebster">Vinicius Webster</a>.
+  </div>
+</body>
+</html>
