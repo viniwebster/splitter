@@ -83,7 +83,13 @@ main{
                 border-radius: 5px;
                 font-size: 1.1rem;
             }
-
+        }
+        .label_title{
+            display: flex;
+            justify-content: space-between;
+            .error{
+                color: red;
+            }
         }
     }
 

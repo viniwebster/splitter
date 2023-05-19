@@ -111,6 +111,13 @@ main {
   border-radius: 5px;
   font-size: 1.1rem;
 }
+.container .container__infos .label_title {
+  display: flex;
+  justify-content: space-between;
+}
+.container .container__infos .label_title .error {
+  color: red;
+}
 .container .container__results {
   background-color: hsl(183, 100%, 15%);
   flex: 1;
