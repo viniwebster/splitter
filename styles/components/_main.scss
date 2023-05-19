@@ -66,6 +66,10 @@ main{
                     color: $secundary;
                 }
             }
+
+            .active{
+                background-color: $primary;
+            }
             
             #tip{
                 box-sizing: border-box;
