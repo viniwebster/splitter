@@ -12,7 +12,7 @@ const values = {
     people: 0,
     tipValue: 0,
     customTip: "",
-    tipResult: function () {    /* função calcula o total da conta e da gorjeta */
+    tipResult() {    /* função calcula o total da conta e da gorjeta */
         let result = (this.bill / this.people);
         let tipResult = ((this.tipValue / 100) * result);
         return { result, tipResult }
