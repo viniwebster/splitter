@@ -82,6 +82,9 @@ function addInfos() {
 
 //função reset
 reset.addEventListener('click', ()=>{
+    values.bill = 0;
+    values.people = 0;
+     
     inputs.forEach( input => input.value = "");
     tip.forEach(btn => {
         values.tipValue = 0;
